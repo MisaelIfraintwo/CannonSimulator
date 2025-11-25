@@ -32,7 +32,7 @@ public class FirebaseRestSender : MonoBehaviour
         };
 
         RestClient.Post(firebaseURL + "/disparos.json", data)
-            .Then(response => Debug.Log("✅ Datos enviados a Firebase"))
-            .Catch(error => Debug.LogError("❌ Error al enviar: " + error.Message));
+            .Then(response => Debug.Log(" Datos enviados a Firebase"))
+            .Catch(error => Debug.LogError(" Error al enviar: " + error.Message));
     }
 }
